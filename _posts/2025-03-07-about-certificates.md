@@ -1,0 +1,11 @@
+
+
+# Summary
+- We manage to use an internal signed cert
+- windows is using mostly the internal cert store, so this should work everywhere
+- linux must reference the internal ca pem/crt
+- dbeaver is using the internal cert store by default
+- pycharm, needs to set an vm option to use the windows store or needs the link to the jks
+- jdbc and hdbcli (also used by sqlalchemy) is fully different
+  - jdbc manage own certs or can use a cert provider on windows. on linux certs will be combined in `/etc/ssl/certs/java/cacerts` (using `ca-certificates-java`)
+  - hdbcli needs certs store (mscrypto) on windows. on linux we can link: `/etc/ssl/certs/ca-certificates.crt` -> containing all host certs.
