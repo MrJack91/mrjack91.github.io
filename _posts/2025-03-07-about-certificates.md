@@ -9,3 +9,9 @@
 - jdbc and hdbcli (also used by sqlalchemy) is fully different
   - jdbc manage own certs or can use a cert provider on windows. on linux certs will be combined in `/etc/ssl/certs/java/cacerts` (using `ca-certificates-java`)
   - hdbcli needs certs store (mscrypto) on windows. on linux we can link: `/etc/ssl/certs/ca-certificates.crt` -> containing all host certs.
+
+
+```bash
+whoami
+grep -rin hallihallo
+```
