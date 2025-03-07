@@ -36,7 +36,7 @@ minima:
   # the `path` property (as represented via Liquid) of the pages in the order they should
   # be rendered.
   nav_pages:
-    - _pages/about.md
+    - about.md
 
   # Set to `true` to show excerpts on the homepage.
   show_excerpts: true
