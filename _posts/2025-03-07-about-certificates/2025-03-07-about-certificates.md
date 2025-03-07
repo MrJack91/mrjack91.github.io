@@ -8,7 +8,7 @@ categories: sap hana, cert, security
 # meta: "Springfield"
 # modified_date: 2016-05-27
 published: true
-excerpt_separator: <!--end_excerpt-->
+# excerpt_separator: <!--end_excerpt-->
 ---
 
 Abhängig von OS und Technologie können Zertifikate verschieden verwendet werden.
