@@ -1,4 +1,13 @@
-
+---
+layout: post
+title: "Some articles are just so short that we have to make the footer stick"
+categories: misc
+author:
+- Bart Simpson
+- Nelson Mandela Muntz
+meta: "Springfield"
+modified_date: 2016-05-27
+---
 
 # Struct
 - Zertifikate
