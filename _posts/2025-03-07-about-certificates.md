@@ -1,7 +1,7 @@
 ---
 layout: post
 # title: "Some articles are just so short that we have to make the footer stick"
-categories: sap hana, cert, security
+# categories: sap hana, cert, security
 # author:
 # - Bart Simpson
 # - Nelson Mandela Muntz
