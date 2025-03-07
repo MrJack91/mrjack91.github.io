@@ -16,9 +16,6 @@
             </svg><span>Subscribe</span>
           </a>
         </p>
-	<small>
-	  <i>page built on: {{ site.time }}</i>
-	</small>
       {%- if site.author %}
         <ul class="contact-list">
           {% if site.author.name -%}
@@ -29,6 +26,9 @@
           {%- endif %}
         </ul>
       {%- endif %}
+      <small>
+        <i>page built on: {{ site.time | date_to_string }}</i>
+      </small>
       </div>
       <div class="footer-col">
         <p>{{ site.description | escape }}</p>
