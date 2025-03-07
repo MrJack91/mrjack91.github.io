@@ -45,7 +45,7 @@ Root-Zertifikate können entweder direkt als File (crt/pem) verwendet werden ode
   * `jdbc`: falls `-Djavax.net.ssl.trustStoreType=Windows-ROOT` ebenfalls den Windows Store
     * **DBeaver:** verwendet standardmässig den Windows Store
     * **PyCharm:** verwendet grundsätzlich auch den Windows Store, allerdings läuft jede Database Connection in einer eigenen JAVA VM, dort wird der Windows Store nicht verwerwendet.
-    ![Windows - Jetbrains Data Source Driver Dialog mit VM Option](/assets/img/2025-03-07-about-certificates/jetbrains-vm-option-win.png)
+    ![Windows - Jetbrains Data Source Driver Dialog mit VM Option](/assets/images/posts/2025-03-07-about-certificates/jetbrains-vm-option-win.png)
 * Linux
   * `hdbcli`: dem `dbapi.connect()` muss das Argument `sslTrustStore = '/etc/ssl/certs/ca-certificates.crt'` mitgegeben werden.
     * `sqlalchemy`: Connection String muss wie folgt erweiter werden`&sslTrustStore=/etc/ssl/certs/ca-certificates.crt`
@@ -62,7 +62,7 @@ Root-Zertifikate können entweder direkt als File (crt/pem) verwendet werden ode
   * `jdbc`: falls `-Djavax.net.ssl.trustStoreType=Windows-ROOT` ebenfalls den Windows Store
     * ~~**DBeaver:** verwende ich nicht auf Linux.~~
     * **PyCharm:** trust Store von Linux muss angegeben werden:
-    ![Linux - Jetbrains Data Source Driver Dialog mit Properties](/assets/img/2025-03-07-about-certificates/jetbrains-jdbc-props-linux.png)
+    ![Linux - Jetbrains Data Source Driver Dialog mit Properties](/assets/images/posts/2025-03-07-about-certificates/jetbrains-jdbc-props-linux.png)
 
 
 
