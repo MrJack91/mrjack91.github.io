@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-hi. i a mrjack91
+hi. i am mrjack91
