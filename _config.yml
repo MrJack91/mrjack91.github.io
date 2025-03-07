@@ -1,7 +1,6 @@
 title: Your awesome title
-author:
-  name: MrJack91
-  # email: your-email@domain.com
+author: MrJack91
+
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
