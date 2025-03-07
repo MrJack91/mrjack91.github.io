@@ -18,8 +18,8 @@ Folgend wird auf die verschiedene Zertifikate Stores eingeangen: Windows, Unix u
 - Für SAP HANA Connections sollen intern signierte Zertifikate verwendet werden.
 - Es gibt eine interne CA, die Certs austellt.
 - Die Datenbank Verbindung kann grundsätzlich via JDBC oder hdbcli erfolgen.
-  - **jdbc:** Jetbrains Database Extension (Datagrip oder integriert in PyCharm) sowie DBeaver verwenden jdbc.
-  - **hdbcli:** Python verwendet entweder direkt das native `hdbcli` Package oder dann dasselbe via sqlalchemy (`sqlalchemy-hana`)
+  - **jdbc:** Jetbrains Database Extension (Datagrip oder integriert in PyCharm) sowie DBeaver verwenden jdbc. [SAP HANA - JDBC Connection Properties](https://help.sap.com/docs/SAP_HANA_CLIENT/f1b440ded6144a54ada97ff95dac7adf/109397c2206a4ab2a5386d494f4cf75e.html)
+  - **hdbcli:** Python verwendet entweder direkt das native `hdbcli` Package oder dann dasselbe via sqlalchemy (`sqlalchemy-hana`). [SAP HANA - Connect Method and Python Connection Properties (hdbcli)](https://help.sap.com/docs/SAP_HANA_CLIENT/f1b440ded6144a54ada97ff95dac7adf/ee592e89dcce4480a99571a4ae7a702f.html)
 - Der Zugriff kann von Windows oder Unix erfolgen.
 
 # Cert Stores
