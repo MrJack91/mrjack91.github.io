@@ -14,4 +14,5 @@ plugins:
   - jekyll-remote-theme
 
 minima:
-  skin: auto
+  skin: dark
+
