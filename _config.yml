@@ -10,7 +10,9 @@ description: >
   in _config.yml. It will appear in your document head meta (for Google search
   results) and in your feed.xml site description.
 
+# version: Mar 5, 2025
 remote_theme: "jekyll/minima@43f3ed0"
+
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
