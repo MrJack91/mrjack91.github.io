@@ -7,7 +7,7 @@ categories: sap hana, cert, security
 # - Nelson Mandela Muntz
 # meta: "Springfield"
 # modified_date: 2016-05-27
-published: true
+# published: true
 # excerpt_separator: <!--end_excerpt-->
 ---
 
