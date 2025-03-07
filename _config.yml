@@ -13,6 +13,8 @@ description: >
 # version: Mar 5, 2025
 remote_theme: "jekyll/minima@43f3ed0"
 
+# google_analytics: G-XXXXXXXXXX
+
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
@@ -34,7 +36,7 @@ minima:
   # the `path` property (as represented via Liquid) of the pages in the order they should
   # be rendered.
   # nav_pages:
-  #   - about.md
+  #   - _pages/about.md
 
   # Set to `true` to show excerpts on the homepage.
   show_excerpts: true
