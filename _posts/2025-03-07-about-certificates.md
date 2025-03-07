@@ -14,7 +14,7 @@ layout: post
 Abhängig von OS und Technologie können Zertifikate verschieden verwendet werden.
 Folgend wird auf die verschiedene Zertifikate Stores eingeangen: Windows, Unix und JKS (für Win und Unix).
 
-# Ausgangslage
+## Ausgangslage
 - Für SAP HANA Connections sollen intern signierte Zertifikate verwendet werden.
 - Es gibt eine interne CA, die Certs austellt.
 - Die Datenbank Verbindung kann grundsätzlich via JDBC oder hdbcli erfolgen.
@@ -22,7 +22,7 @@ Folgend wird auf die verschiedene Zertifikate Stores eingeangen: Windows, Unix u
   - **hdbcli:** Python verwendet entweder direkt das native `hdbcli` Package oder dann dasselbe via sqlalchemy (`sqlalchemy-hana`). [SAP HANA - Connect Method and Python Connection Properties (hdbcli)](https://help.sap.com/docs/SAP_HANA_CLIENT/f1b440ded6144a54ada97ff95dac7adf/ee592e89dcce4480a99571a4ae7a702f.html)
 - Der Zugriff kann von Windows oder Unix erfolgen.
 
-# Cert Stores
+## Cert Stores
 Root-Zertifikate können entweder direkt als File (crt/pem) verwendet werden oder via einen Cert Store, der die Zertifikate geschützt zur Verfügung stellt:
 - **Windows** bietet dazu die Programme "Manage computer / user certifcates" (direkt via Start Menu) an. Resp. kann via MMC verwendet werden.
 - **Linux** hat das Package `ca-certificates` mit dem Befehl `update-ca-certificates`
@@ -37,7 +37,7 @@ Root-Zertifikate können entweder direkt als File (crt/pem) verwendet werden ode
   - der JKS ist immer mit einem Passwort geschützt, standardmässig mit: `changeit`
 
 
-# DB Clients
+## DB Clients
 * [SAP HANA Client Interface Programming Reference
 ](https://help.sap.com/docs/SAP_HANA_CLIENT/f1b440ded6144a54ada97ff95dac7adf/ce5509c492af4a9f84ee519d5659f186.html)
 * Windows
@@ -66,7 +66,7 @@ Root-Zertifikate können entweder direkt als File (crt/pem) verwendet werden ode
 
 
 
-# SAP HANA und Zertifikate
+## SAP HANA und Zertifikate
 HANA hat standardmässig selbstsignierte Zertifikate.
 Das aktuelle public Zertifikat einer HANA DB kann wie folgt abgerufen werden:
 ```bash
@@ -89,4 +89,4 @@ keytool -importcert -alias 'db.sap.hana.com:12345' -file "db.sap.hana.com.pem" -
 keytool -list -keystore my_certs.jks -v -storepass changeit
 ```
 
-Insofern, das Cert vorliegt, muss bei der Connection nur die Option  `encrypt=True` gesetzt werden und der Zugriff erfolgt verschlüsselt via verifizierten Host.
+Insofern das Cert vorliegt, muss bei der Connection nur die Option  `encrypt=True` gesetzt werden und der Zugriff erfolgt verschlüsselt via verifizierten Host.
