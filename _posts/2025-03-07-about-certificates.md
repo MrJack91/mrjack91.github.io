@@ -1,5 +1,13 @@
 
 
+# Struct
+- Zertifikate
+- bei SAP HANA
+- Store fürs hdbcli und HDBC
+- Management Windows
+- Management Linux
+
+
 # Summary
 - We manage to use an internal signed cert
 - windows is using mostly the internal cert store, so this should work everywhere
