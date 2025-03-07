@@ -1,20 +1,15 @@
 ---
 layout: post
-title: "Some articles are just so short that we have to make the footer stick"
-categories: misc
-author:
-- Bart Simpson
-- Nelson Mandela Muntz
-meta: "Springfield"
-modified_date: 2016-05-27
+# title: "Some articles are just so short that we have to make the footer stick"
+categories: sap hana, cert, security
+# author:
+# - Bart Simpson
+# - Nelson Mandela Muntz
+# meta: "Springfield"
+# modified_date: 2016-05-27
 published: true
 excerpt_separator: <!--end_excerpt-->
 ---
-
-Test excerpt only with delimiter
-
-<!--end_excerpt-->
-
 
 Abhängig von OS und Technologie können Zertifikate verschieden verwendet werden.
 Folgend wird auf die verschiedene Zertifikate Stores eingeangen: Windows, Unix und JKS (für Win und Unix).
@@ -93,3 +88,5 @@ keytool -importcert -alias 'db.sap.hana.com:12345' -file "db.sap.hana.com.pem" -
 # display all keys inside a jks
 keytool -list -keystore my_certs.jks -v -storepass changeit
 ```
+
+Insofern, das Cert vorliegt, muss bei der Connection nur die Option  `encrypt=True` gesetzt werden und der Zugriff erfolgt verschlüsselt via verifizierten Host.
