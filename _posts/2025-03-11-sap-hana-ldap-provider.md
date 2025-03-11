@@ -4,7 +4,7 @@ layout: post
 # categories: sap hana, cert, security
 # meta: "Springfield"
 # modified_date: 2016-05-27
-published: false
+# published: false
 # excerpt_separator: <!--end_excerpt-->
 ---
 
