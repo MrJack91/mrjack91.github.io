@@ -6,7 +6,7 @@ author:
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
-  Versuch einige Learnings für mich zu dokumentieren.
+  Die Dokumentation einiger Learnings für mich.
 
 # version: Mar 5, 2025
 remote_theme: "jekyll/minima@43f3ed0"
