@@ -8,7 +8,7 @@ title: "SAP HANA LDAP Provider - AD Integration"
 # excerpt_separator: <!--end_excerpt-->
 ---
 
-Den Active Directory Account für die Verbindung zur DB (SAP HANA) verwenden, why not?
+Den Active Directory Account für die Verbindung zur DB (SAP HANA) verwenden - why not?
 
 
 ## Intro
