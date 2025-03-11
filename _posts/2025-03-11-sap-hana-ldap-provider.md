@@ -8,7 +8,7 @@ layout: post
 # excerpt_separator: <!--end_excerpt-->
 ---
 
-Den Active Directory Account für die Verbindung zur DB (SAP HANA) zu verwenden, why not?
+Den Active Directory Account für die Verbindung zur DB (SAP HANA) verwenden, why not?
 
 
 ## Intro
