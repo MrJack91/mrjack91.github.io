@@ -11,7 +11,7 @@ description: >
 # version: Mar 5, 2025
 remote_theme: "jekyll/minima@43f3ed0"
 
-# google_analytics: G-XXXXXXXXXX
+google_analytics: G-85P7XTNNXG
 
 plugins:
   - jekyll-remote-theme
