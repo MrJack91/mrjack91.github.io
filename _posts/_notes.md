@@ -1,6 +1,4 @@
 # Ideas to write about
-* telnet ersatz -> page already created
-* docker image build
 * pixi
 * docker / podman setup
 
