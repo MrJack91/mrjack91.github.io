@@ -59,9 +59,9 @@ Root-Zertifikate können entweder direkt als File (crt/pem) verwendet werden ode
         conn_str_hana = 'hana://DB_USER:DB_PASSWORD@DB_ADDRESS:/?encrypt=true&sslTrustStore=/etc/ssl/certs/ca-certificates.crt'
       end
       ```
-  * `jdbc`: falls `-Djavax.net.ssl.trustStoreType=Windows-ROOT` ebenfalls den Windows Store
+  * `jdbc`:
     * ~~**DBeaver:** verwende ich nicht auf Linux.~~
-    * **PyCharm:** trust Store von Linux muss angegeben werden:
+    * **PyCharm:** trust Store von Linux muss angegeben werden: trustStore /etc/ssl/certs/java/cacerts
     ![Linux - Jetbrains Data Source Driver Dialog mit Properties](/assets/images/posts/2025-03-07-about-certificates/jetbrains-jdbc-props-linux.png)
 
 
