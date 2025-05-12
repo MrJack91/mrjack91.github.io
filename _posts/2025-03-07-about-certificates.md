@@ -61,7 +61,7 @@ Root-Zertifikate können entweder direkt als File (crt/pem) verwendet werden ode
       ```
   * `jdbc`:
     * ~~**DBeaver:** verwende ich nicht auf Linux.~~
-    * **PyCharm:** trust Store von Linux muss angegeben werden: trustStore /etc/ssl/certs/java/cacerts
+    * **PyCharm:** trust Store von Linux muss angegeben werden: trustStore `/etc/ssl/certs/java/cacerts`
     ![Linux - Jetbrains Data Source Driver Dialog mit Properties](/assets/images/posts/2025-03-07-about-certificates/jetbrains-jdbc-props-linux.png)
 
 
