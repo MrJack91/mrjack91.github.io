@@ -14,6 +14,7 @@
 * notify-send-event
 * hotspot hop limit / imei number
 * backup with restic
+* extract-inspect
 
 
 <!--
