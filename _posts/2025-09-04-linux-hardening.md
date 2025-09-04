@@ -1,10 +1,10 @@
 ---
 layout: post
 # title: "Some articles are just so short that we have to make the footer stick"
-# categories: sap hana, cert, security
+categories: linux, hardening, server
 # meta: "Springfield"
 # modified_date: 2016-05-27
-published: false
+published: true
 # excerpt_separator: <!--end_excerpt-->
 ---
 

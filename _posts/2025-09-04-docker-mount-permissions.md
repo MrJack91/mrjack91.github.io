@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Docker: Mount Permissions"
-# categories: sap hana, cert, security
+categories: docker, mount, volumes, permissions, gosu
 # meta: "Springfield"
 # modified_date: 2016-05-27
 published: true
