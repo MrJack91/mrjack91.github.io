@@ -84,10 +84,11 @@ sudo apt purge exim4 exim4-base exim4-config exim4-daemon-light
 
 ### systemd resolved
 (127.0.0.54:53/udp/tcp) / LLMNR (0.0.0.0:5355/udp/tcp)
-### DNS (127.0.0.54:53/udp/tcp)
+
+#### DNS (127.0.0.54:53/udp/tcp)
 Wird als interner DNS Cache verwendet, daher so lassen.
 
-### LLMNR (0.0.0.0:5355/udp/tcp)
+#### LLMNR (0.0.0.0:5355/udp/tcp)
 LLMNR (Link-Local Multicast Name Resolution) ist bei normalen Netzwerken nicht nötig.
 
 ```bash
