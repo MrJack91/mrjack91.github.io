@@ -4,7 +4,7 @@ title: "Docker: Mount Permissions"
 # categories: sap hana, cert, security
 # meta: "Springfield"
 # modified_date: 2016-05-27
-published: false
+published: true
 # excerpt_separator: <!--end_excerpt-->
 ---
 
