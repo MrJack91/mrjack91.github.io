@@ -47,7 +47,7 @@ COPY . .
 ...
 
 ENTRYPOINT ["/app/data/entrypoint.sh"]
-CMD ["pixi", "run", "python", "-m", "cdwh_generator.cs_management", "--mode", "hist", "--env", "e", "--target-branch", "main"]
+CMD ["/bin/bash"]
 ```
 
 `entrypoint.sh`
@@ -97,7 +97,7 @@ Dann via`docker-compose.yaml` oder via `.env` kann die UID/GUI gewählt werden.
 `.env`
 ```bash
 # rewrite project name if necessary
-COMPOSE_PROJECT_NAME=my_cdwh
+COMPOSE_PROJECT_NAME=test
 
 # use id -u, id -g
 PUID=1000
