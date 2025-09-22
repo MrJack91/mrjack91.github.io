@@ -8,7 +8,7 @@ published: true
 # excerpt_separator: <!--end_excerpt-->
 ---
 
-Meine basic top config.
+Meine basic `top` config.
 
 
 ## Die Config
