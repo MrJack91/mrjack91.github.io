@@ -9,6 +9,7 @@ published: true
 ---
 
 Telnet ohne admin und ohne telnet:
+
 ```bash
 (timeout 1 bash -c '</dev/tcp/<ip>/<port> && echo PORT OPEN || echo PORT CLOSED') 2>/dev/null
 ```

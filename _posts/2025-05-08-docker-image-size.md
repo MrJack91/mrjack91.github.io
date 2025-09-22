@@ -8,6 +8,8 @@ published: true
 # excerpt_separator: <!--end_excerpt-->
 ---
 
+Wie kann ein Docker Image verkleinert werden.
+
 ## Grob wissen wir:
 * jede Dockerfile Anweisung resultiert in einen extra Layer (Beispiel: `copy`, `run`, `env`, `workdir`, `user`)
 * für das finale Image, müssen alle Layers geladen werden

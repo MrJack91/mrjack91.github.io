@@ -8,14 +8,12 @@ published: true
 # excerpt_separator: <!--end_excerpt-->
 ---
 
-test abc
+Paar basics, die man bei Server mal testen kann.
 
 <!--
 Nicest is not nice: (↪) will be with blue border
 → ⇒ ⇝ ↬
 -->
-
-test
 
 ## General
 

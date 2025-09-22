@@ -8,6 +8,8 @@ published: true
 # excerpt_separator: <!--end_excerpt-->
 ---
 
+Wie kann aus einem Container korrekt auf ein Mount Volume zugegriffen werden. Ohne `chmod 777`.
+
 <!--
 Nicest is not nice: (↪) will be with blue border
 → ⇒ ⇝ ↬
