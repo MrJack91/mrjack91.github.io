@@ -11,7 +11,7 @@ published: true
 Meine basic top config.
 
 
-## die Config
+## Die Config
 Um nicht immer mit `h` die Help durchzulesen:
 
 
