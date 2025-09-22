@@ -15,7 +15,7 @@ Meine basic top config.
 Um nicht immer mit `h` die Help durchzulesen:
 
 
-```bash
+```txt
 top
 z: enable colors
 E: set RAM to GB in header
@@ -37,7 +37,6 @@ move sort to mem
 Meist habe ich einen `topu` alias, die mir nur die Prozesse des aktuellen Users anzeigt:
 ```bash
 alias topu='top -u $(whoami)'
-
 
 # or as a fish function
 function topu --wraps='top -u $(whoami)' --description 'alias topu=top -u $(whoami)'
