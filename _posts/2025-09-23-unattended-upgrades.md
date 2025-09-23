@@ -37,7 +37,7 @@ password       ""
 apt-cache policy
 
 # nice to seperate changes
-vi /etc/apt/apt.conf.d/51unattended-upgrades-usb
+vi /etc/apt/apt.conf.d/51unattended-upgrades-my
 
 Unattended-Upgrade::Origins-Pattern {
         "origin=Debian,codename=${distro_codename}-updates";
