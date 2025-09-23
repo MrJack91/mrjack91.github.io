@@ -76,10 +76,10 @@ ALTER LDAP PROVIDER my_ldap
     CREDENTIAL TYPE 'PASSWORD' USING 'user=CN=<AD_HANA_SERVICE_USER>,OU=Service,OU=Users,OU=myOu,DC=ms,DC=company,DC=com;password=xx'
 
     -- which users are allowed for user creation -> * will be replaced with username
-    USER LOOKUP URL 'ldaps://ad.ms.company.com/OU=myOu,DC=ms,DC=uhbs,DC=ch??sub?(&(objectClass=user)(memberOf:1.2.840.113556.1.4.1941:=CN=<AD_PERMISSION_GROUP_ALLOW_CONNECT>,OU=Permission,OU=Groups,OU=myOu,DC=ms,DC=company,DC=com)(sAMAccountName=*))'
+    USER LOOKUP URL 'ldaps://ad.ms.company.com/OU=myOu,DC=ms,DC=xxx,DC=ch??sub?(&(objectClass=user)(memberOf:1.2.840.113556.1.4.1941:=CN=<AD_PERMISSION_GROUP_ALLOW_CONNECT>,OU=Permission,OU=Groups,OU=myOu,DC=ms,DC=company,DC=com)(sAMAccountName=*))'
 
     -- use all groups from this "myOu"
-    NESTED GROUP LOOKUP URL 'ldaps://ad.ms.company.com/OU=myOu,DC=ms,DC=uhbs,DC=ch??sub?(&(objectClass=group)(memberOf:1.2.840.113556.1.4.1941:=OU=Permission,OU=Groups,OU=myOu,DC=ms,DC=company,DC=com)(member:1.2.840.113556.1.4.1941:=*))'
+    NESTED GROUP LOOKUP URL 'ldaps://ad.ms.company.com/OU=myOu,DC=ms,DC=xxx,DC=ch??sub?(&(objectClass=group)(memberOf:1.2.840.113556.1.4.1941:=OU=Permission,OU=Groups,OU=myOu,DC=ms,DC=company,DC=com)(member:1.2.840.113556.1.4.1941:=*))'
 
     ATTRIBUTE DN 'distinguishedName'
     
