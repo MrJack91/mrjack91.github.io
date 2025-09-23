@@ -12,6 +12,7 @@ Unattendend Upgrades mit Mail Notification on Ubuntu 24.04 / Debian 12
 
 ```bash
 # choose app armor if asked
+# mta also contains symlinks for mail, mailx, sendmail...
 apt install unattended-upgrades msmtp-mta
 
 # to enable auto upgrade
@@ -64,5 +65,9 @@ Unattended-Upgrade::MailReport "always";
 
 # there is also a --dry-run option, but this will not send an email
 unattended-upgrades --debug
+
+# to test the mail config
+printf "Subject: Test\n\nHello, This is my test message." | msmtp to@mail.ch
+echo "Test body" | mailx -s "Test Subject" msmtp to@mail.ch
 ```
 
