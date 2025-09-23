@@ -33,7 +33,7 @@ Root-Zertifikate können entweder direkt als File (crt/pem) verwendet werden ode
   ```
 - **Java** hat ein eigenes Dateiformat `jks` (java keystore), das mit dem Programm `keytool` verwaltet werden kann.
   - In Windows kann Java direkt den Windows Cert Store verwenden, dazu muss die VM Option: `-Djavax.net.ssl.trustStoreType=Windows-ROOT` angegeben werden. Ansonsten muss der Pfad zu einem `jks` angegeben sein.
-  - In Linux wird mit `ca-certificates-java` automatisch beim ausführen von `update-ca-certificates` ein `jks` mit allen system-weiten Root-Zertifikate erstellt. Dieses liegt hier: `/etc/ssl/certs/java/cacerts`
+  - In Linux wird mit `ca-certificates-java` automatisch beim Ausführen von `update-ca-certificates` ein `jks` mit allen system-weiten Root-Zertifikate erstellt. Dieses liegt hier: `/etc/ssl/certs/java/cacerts`
   - der JKS ist immer mit einem Passwort geschützt, standardmässig mit: `changeit`
 
 

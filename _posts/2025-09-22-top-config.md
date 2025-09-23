@@ -33,8 +33,8 @@ move sort to mem
 :W to write these configs
 ```
 
-## Alias to the win
-Meist habe ich einen `topu` alias, die mir nur die Prozesse des aktuellen Users anzeigt:
+## Alias for the win
+Meist habe ich einen `topu` Alias, die mir nur die Prozesse des aktuellen Users anzeigt:
 ```bash
 alias topu='top -u $(whoami)'
 
