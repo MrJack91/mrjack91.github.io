@@ -24,6 +24,9 @@ tree -pug
 
 icdiff -r pk pp
 
+# or: (H)ighlight, W(hole File), P(ermission), N(umbers)
+icdiff -rHWPN pk pp
+
 umount pk pp
 ```
 
