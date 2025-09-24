@@ -22,7 +22,7 @@ sshfs pp:/etc/monit/conf.d pp
 # list files incl. permission, user and group
 tree -pug
 
-icdiff pk pp
+icdiff -r pk pp
 
 umount pk pp
 ```
