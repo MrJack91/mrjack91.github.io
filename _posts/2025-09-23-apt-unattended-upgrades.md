@@ -18,6 +18,10 @@ apt install unattended-upgrades msmtp-mta
 # to enable auto upgrade
 dpkg-reconfigure unattended-upgrades
 
+# to see when updates and upgrades a triggered -> adapt them if necessary
+systemctl list-timers apt-daily*
+
+
 vi /etc/msmtprc
 
 defaults
