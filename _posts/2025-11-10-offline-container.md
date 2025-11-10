@@ -152,6 +152,8 @@ Location: https://one.one.one.one/ [following]
 Resolving one.one.one.one (one.one.one.one)... failed: Name or service not known.
 wget: unable to resolve host address 'one.one.one.one'
 
+exit
+
 
 # Beispiel wie mailpit nicht mehr ins Internet kommt
 docker exec -it mailpit-1 /bin/sh
@@ -161,6 +163,17 @@ wget -S -O - 1.1.1.1
 
 Connecting to 1.1.1.1 (1.1.1.1:80)
 wget: can't connect to remote host (1.1.1.1): Network unreachable
+
+exit
+
+# verify mailpit from host
+echo "Yay - Mail body for offline mailpit"
+curl --url 'smtp://localhost:1025' \
+  --mail-from 'sender@envelope.com' \
+  --mail-rcpt 'recipient@envelope.com' \
+  --upload-file email.txt
+
+
 
 ```
 
