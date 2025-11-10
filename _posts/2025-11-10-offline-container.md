@@ -23,7 +23,8 @@ So informierte ich mich wie ich am einfachsten und saubersten einem Container da
 
 
 ## Setup
- ```txt
+File Struktur
+```txt
  .
 ├── docker-compose.yml
 └── rinetd
@@ -31,6 +32,7 @@ So informierte ich mich wie ich am einfachsten und saubersten einem Container da
     └── rinetd.conf
 ```
 
+`docker-compose.yml`
 ```docker-compose.yml
 services:
   mailpit:
@@ -79,6 +81,7 @@ volumes:
   mailpit_data:
 ```
 
+`rinetd/Dockerfile`
 ```Dockerfile
 FROM debian:bookworm-slim
 
@@ -91,6 +94,7 @@ RUN apt-get update && \
 CMD ["rinetd", "-f", "-c", "/etc/rinetd.conf"]
 ```
 
+`rinetd/rinetd.conf`
 ```conf
 # rinetd/rinetd.conf
 #
