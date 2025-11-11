@@ -11,7 +11,7 @@ layout: post
 # excerpt_separator: <!--end_excerpt-->
 ---
 
-# Access Web Service on Ubuntu Server from Windows with Port forwarding
+Access Web Service on Ubuntu Server from Windows with Port forwarding
 
 ## Server Setup
 - Docker container is binded to `127.0.0.1:4200->4200/tcp`

@@ -8,6 +8,7 @@ published: true
 # excerpt_separator: <!--end_excerpt-->
 ---
 
+Was wenn man ein Container braucht, dem man nicht traut und der eigentlich keinen Internet-Zugang möchte, aber er trotzdem vom Host aus kontaktierbar sein muss?
 
 ## Intro
 Vor kurzem bin ich auf `Mailpit` gestossen:
