@@ -1,15 +1,15 @@
-  ---
-  layout: post
-  # title: "Some articles are just so short that we have to make the footer stick"
-  # categories: sap hana, cert, security
-  # author:
-  # - Bart Simpson
-  # - Nelson Mandela Muntz
-  # meta: "Springfield"
-  # modified_date: 2016-05-27
-  # published: true
-  # excerpt_separator: <!--end_excerpt-->
-  ---
+-
+layout: post
+# title: "Some articles are just so short that we have to make the footer stick"
+# categories: sap hana, cert, security
+# author:
+# - Bart Simpson
+# - Nelson Mandela Muntz
+# meta: "Springfield"
+# modified_date: 2016-05-27
+# published: true
+# excerpt_separator: <!--end_excerpt-->
+---
 
 # Access Web Service on Ubuntu Server from Windows with Port forwarding
 
