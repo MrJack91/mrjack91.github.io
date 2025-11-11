@@ -16,6 +16,7 @@ Vor kurzem bin ich auf `Mailpit` gestossen:
 Da ich das Tool nicht kenne, dachte ich mir:
 * cool, es gibt auch ein Image
 * einziges Problem: das Image könnte via Internet eine Reverse Shell öffnen
+* allerdings muss ich von aussen den Container erreichen können -> darum geht ein `networks: drivers: none` nicht
 
 So informierte ich mich wie ich am einfachsten und saubersten einem Container das Internet verweigern kann und bin auf folgendes Setup gestossen:
 * mailpit mit internal network
