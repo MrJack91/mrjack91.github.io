@@ -24,29 +24,29 @@ Access Web Service on Ubuntu Server from Windows with Port forwarding
   - to have the same domain name locally available
 - Because we would like to use a non-root port for ssh -> so that we can use the users `.ssh/config` we add a simple local redirect using `socat` (which runs as root)
   - setup a simple redirect as systemd service
-  ```bash
-  sudo apt install socat
-  cat /etc/systemd/system/domain-local-80.service
-
-  [Unit]
-  Description=Expose domain.local:80 inside WSL
-  After=network.target
+    ```bash
+    sudo apt install socat
+    cat /etc/systemd/system/domain-local-80.service
   
-  [Service]
-  ExecStart=/usr/bin/socat TCP-LISTEN:80,bind=127.0.0.1,fork,reuseaddr TCP:127.0.0.1:4200
-  Restart=always
-  AmbientCapabilities=CAP_NET_BIND_SERVICE
-  
-  [Install]
-  WantedBy=multi-user.target
-  ```
+    [Unit]
+    Description=Expose domain.local:80 inside WSL
+    After=network.target
+    
+    [Service]
+    ExecStart=/usr/bin/socat TCP-LISTEN:80,bind=127.0.0.1,fork,reuseaddr TCP:127.0.0.1:4200
+    Restart=always
+    AmbientCapabilities=CAP_NET_BIND_SERVICE
+    
+    [Install]
+    WantedBy=multi-user.target
+    ```
   - manage service
-  ```bash
-  sudo systemctl daemon-reload
-  sudo systemctl enable --now domain-local-80.service
-  # verify
-  sudo systemctl status domain-local-80.service
-  ```
+    ```bash
+    sudo systemctl daemon-reload
+    sudo systemctl enable --now domain-local-80.service
+    # verify
+    sudo systemctl status domain-local-80.service
+    ```
 - SSH Tunnel: finally we can redirect socats output to the remote server
   ```bash
   # params
