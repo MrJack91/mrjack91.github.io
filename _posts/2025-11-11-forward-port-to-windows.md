@@ -48,7 +48,26 @@ Access Web Service on Ubuntu Server from Windows with Port forwarding
   sudo systemctl status domain-local-80.service
   ```
 - SSH Tunnel: finally we can redirect socats output to the remote server
-  - `ssh -L 4200:my-domain.local:80 -N -f -o ServerAliveInterval=60 ssh-config-entry`
+  ```bash
+  # params
+  #   -N: No remote command -> no shell start up, no command injection TTY
+  #   -f: **f**ork -> Background
+  #   ServerAliveInterval=60: Prevents timeout (resend every 60s)
+  ssh -L 4200:my-domain.local:80 -N -f -o ServerAliveInterval=60 ssh-config-entry
+
+  # to exit the background process
+  ## simple classic way
+  ps aux | grep "ssh"
+  kill x
+
+  ## simple easy way
+  pgrep -f "ssh -L"
+  pkill -f "ssh -L"
+  
+  ## or other ways
+  ss -ltnp | grep ":4200"
+  sudo lsof -iTCP:4200 -sTCP:LISTEN
+  ```
 
 
 ## Whole setup overview
