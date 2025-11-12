@@ -90,3 +90,10 @@ keytool -list -keystore my_certs.jks -v -storepass changeit
 ```
 
 Insofern das Cert vorliegt, muss bei der Connection nur die Option  `encrypt=True` gesetzt werden und der Zugriff erfolgt verschlüsselt via verifizierten Host.
+
+## Andere Certs
+```bash
+# download SMTP certs from server
+openssl s_client -starttls smtp -connect xxx.com:25 -showcerts </dev/null > chain.pem
+```
+
