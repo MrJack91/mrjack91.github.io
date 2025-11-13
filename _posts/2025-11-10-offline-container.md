@@ -51,6 +51,10 @@ services:
       # Optional: Setzt das "Pruning" (Löschen alter Mails) hoch
       # Standard ist 1000 Mails, hier z.B. 5000
       - MP_MAX_MESSAGES=5000
+      # necessary to support tls with self sign certs
+      MP_SMTP_TLS_CERT: sans:localhost
+      MP_SMTP_TLS_KEY: sans:localhost
+
     restart: unless-stopped
 
   proxy:
