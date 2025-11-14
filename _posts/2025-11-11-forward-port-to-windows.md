@@ -11,7 +11,8 @@ layout: post
 # excerpt_separator: <!--end_excerpt-->
 ---
 
-Access Web Service on Ubuntu Server from Windows with Port forwarding
+Access Web Service on Ubuntu Server from Windows with Port forwarding.
+Using a standard, but still use the users ssh configurationssh .
 
 ## Server Setup
 - Docker container is binded to `127.0.0.1:4200->4200/tcp`
@@ -22,7 +23,7 @@ Access Web Service on Ubuntu Server from Windows with Port forwarding
 ## Extension to access the same from another host
 - `C:\Windows\System32\drivers\etc\hosts`: add `127.0.0.1		my-domain.local`
   - to have the same domain name locally available
-- Because we would like to use a non-root port for ssh -> so that we can use the users `.ssh/config` we add a simple local redirect using `socat` (which runs as root)
+- Because we would like to use a non-root port for ssh -> so that we can use the users `.ssh/config` (and keys) we add a simple local redirect using `socat` (which runs as root)
   - setup a simple redirect as systemd service
     ```bash
     sudo apt install socat
