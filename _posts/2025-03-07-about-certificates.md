@@ -7,7 +7,7 @@ layout: post
 # - Nelson Mandela Muntz
 # meta: "Springfield"
 # modified_date: 2016-05-27
-# published: true
+published: true
 # excerpt_separator: <!--end_excerpt-->
 ---
 
