@@ -9,7 +9,7 @@ published: true
 ---
 
 > "The system cannot find the path specified."
-> - Powershell, before every command I want to run
+> -- <cite>Powershell, before every command I want to run</cite>
 
 # Background
 Als [pixi](https://pixi.sh/) und PyCharm Nutzer, wollte ich die Erweiterung `pixi-pycharm` verwenden, um `pixi` [ins Pycharm zu integrieren][https://pixi.sh/dev/integration/editor/jetbrains/].
