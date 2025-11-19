@@ -14,7 +14,13 @@ Via VPN kann WSL nicht mehr auf die lokalen Ressourcen zugreifen.
 Sobald man via VPN verbunden ist (z.B. Cisco AnyConnect) können im WSL keine IP's mehr angepinnt werden. Timeout.
 Ohne VPN (im lokalen Netz) funktioniert alles.
 
-## Ursache
+## Lösung
+Stelle den Network Mode von WSL auf `mirrored`. Z.B. via WSL Settings.
+
+
+## Alternative: um etwas zu lernen
+
+### Ursache
 Für ein Ziel kann mehr als ein Route bekannt sein.
 Ist dies der Fall, wählt Windows anhand der Kosten (`TotalMetric = InterfaceMetric + RouteMetric`), die Verbindung mit den geringsten Kosten.
 * `InterfaceMetric`: „Grund-Priorität“ einer Netzwerkkarte
