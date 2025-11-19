@@ -18,7 +18,7 @@ Ohne VPN (im lokalen Netz) funktioniert alles.
 Stelle den Network Mode von WSL auf `mirrored`. Z.B. via WSL Settings.
 
 
-## Alternative: um etwas zu lernen
+## Alternative - z.B. um etwas zu lernen
 
 ### Ursache
 Für ein Ziel kann mehr als ein Route bekannt sein.
