@@ -11,8 +11,8 @@ layout: post
 # excerpt_separator: <!--end_excerpt-->
 ---
 
-Access Web Service on Ubuntu Server from Windows with Port forwarding.
-Using a standard, but still use the users ssh configurationssh .
+Access a Web Service on a Ubuntu Server from Windows with Port forwarding.
+Using a standard port (needs root), but still use the users ssh configuration (needs the user, not root).
 
 ## Server Setup
 - Docker container is binded to `127.0.0.1:4200->4200/tcp`
