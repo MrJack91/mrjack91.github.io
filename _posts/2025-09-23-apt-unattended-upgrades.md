@@ -21,6 +21,14 @@ dpkg-reconfigure unattended-upgrades
 # to see when updates and upgrades a triggered -> adapt them if necessary
 systemctl list-timers apt-daily*
 
+# e.g.: "OnCalendar=" necessary to overwrite existing trigger.
+systemctl edit apt-daily-upgrade.timer
+ 
+[Timer]
+OnCalendar=
+OnCalendar=Wed 10:00
+RandomizedDelaySec=1h
+
 
 vi /etc/msmtprc
 
