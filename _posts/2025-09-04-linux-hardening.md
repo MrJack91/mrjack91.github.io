@@ -19,7 +19,7 @@ Nicest is not nice: (↪) will be with blue border
 
 Paar Schritte um einen Linux Server grob zu checken:
 ```bash
-# liste alle Port die zurzeit offen sind (optional: interne können augeschlossen werden)
+# liste alle Port die zurzeit offen sind (optional: interne können ausgeschlossen werden)
 ss -tulpen | grep -v 127.0.0.1
 
 # liste alle sockets, die unteranderem auch einen Port öffnen können
