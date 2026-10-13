@@ -8,6 +8,10 @@ published: true
 # excerpt_separator: <!--end_excerpt-->
 ---
 
+Debian auf Fehler checken.
+
+<!--end_excerpt-->
+
 ```bash
 systemctl --failed
 
