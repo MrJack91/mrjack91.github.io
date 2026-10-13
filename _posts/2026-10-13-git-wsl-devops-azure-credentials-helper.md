@@ -1,14 +1,17 @@
 ---
 layout: post
-# title: "Some articles are just so short that we have to make the footer stick"
+title: "Azure DevOps Git Credentials Manager für WSL"
 categories: wsl, git, git-credential-manager, azure, devops
 # meta: "Springfield"
 # modified_date: 2016-05-27
 published: true
-# excerpt_separator: <!--end_excerpt-->
+excerpt_separator: <!--end_excerpt-->
 ---
 
-# Azure DevOps Git Credentials Manager für WSL
+WSL richtig und sicher mit Git auf DevOps Azure verbinden.
+
+<!--end_excerpt-->
+
 DevOps hat nur RSA Keys um per SSH Repos zu laden.
 
 Darum besser den Credential Manager nutzen.
