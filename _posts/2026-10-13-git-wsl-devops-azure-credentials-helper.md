@@ -23,7 +23,9 @@ Siehe: [wsl-git](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-git
 WSL (Ubuntu) hat git bereits installiert (ohne credential Manager), diesen kann man auf das Windows Exe hängen.
 ```bash
 
-git config --global credential.helper "/mnt/c/Progra~1/Git/mingw64/bin/git-credential-manager.exe"
+git config --global credential.helper "/mnt/c/Progra~1/Git/ucrt64/bin/git-credential-manager.exe"
+# for older git installations (still working with mingw64)
+# git config --global credential.helper "/mnt/c/Progra~1/Git/mingw64/bin/git-credential-manager.exe"
 git config --global credential.useHttpPath true
 git config --global credential.azreposCredentialType oauth
 
