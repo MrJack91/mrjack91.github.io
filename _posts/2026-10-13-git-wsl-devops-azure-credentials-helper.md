@@ -24,8 +24,12 @@ WSL (Ubuntu) hat git bereits installiert (ohne credential Manager), diesen kann 
 ```bash
 
 git config --global credential.helper "/mnt/c/Progra~1/Git/ucrt64/bin/git-credential-manager.exe"
+# oder falls git im user context installiert (z.B. winget)
+git config --global credential.helper "/mnt/c/Users/xxx/AppData/Local/Programs/Git/ucrt64/bin/git-credential-manager.exe"
+
 # for older git installations (still working with mingw64)
 # git config --global credential.helper "/mnt/c/Progra~1/Git/mingw64/bin/git-credential-manager.exe"
+
 git config --global credential.useHttpPath true
 git config --global credential.azreposCredentialType oauth
 
